@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+section {
+    padding: 40px 0;
+}
+
+form input, form textarea {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+button {
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
