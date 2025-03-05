@@ -1,0 +1,345 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header sticky */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0056b3; /* Azul para el header */
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    margin: 0;
+}
+
+/* Estilos de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f45730 !important;;
+    background-color: #48ff00;
+}
+
+/* Cuando el enlace está activo */
+nav a.active {
+    background-color: #48ff00; /* Color de fondo fijo */
+    color: black !important; /* Color de texto en activo */
+}
+nav a.active:hover {
+    color: #c43613 !important;;
+    background-color: #3cbf08;
+}
+
+/* Sección de contenido */
+section {
+    padding: 40px 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* Títulos y texto */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.container{
+    background-color: #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+/* Ajustes para columnas y tarjetas */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Estilo de los enlaces de contacto */
+.card-body p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Estilo de la caja del mapa */
+.card-body iframe {
+    border-radius: 8px;
+}
+
+/* Estilo para el formulario de contacto */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Estilo de botones */
+button {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #004494;
+    transform: translateY(-2px);
+}
+
+/* Carrusel */
+.carousel-item img {
+    object-fit: cover; /* Asegura que las imágenes se ajusten */
+    height: 400px; /* Ajusta la altura de las imágenes */
+    border-radius: 8px;
+}
+
+.carousel-inner {
+    height: 400px;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    max-height: 100%;
+}
+
+.carousel-caption h5 {
+    color: #e6850f; /* Blanco para el título */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para dar contraste */
+    font-weight: bold; /* Hacer el texto más fuerte */
+    font-size: 2rem; /* Tamaño de fuente más grande */
+}
+
+.carousel-caption p {
+    color: #fff; /* Color gris claro para el párrafo */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra ligera para mejorar contraste */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+}
+
+/* Estilos para los botones de navegación del carrusel */
+.carousel-control-prev, 
+.carousel-control-next {
+    transition: background-color 0.3s ease; /* Efecto de transición suave */
+}
+
+/* Cambia el color al pasar el ratón sobre el botón "anterior" */
+.carousel-control-prev:hover {
+    background-color: rgba(255, 165, 0, 0.7); /* Color naranja semi-transparente */
+}
+
+/* Cambia el color al pasar el ratón sobre el botón "siguiente" */
+.carousel-control-next:hover {
+    background-color: rgba(255, 165, 0, 0.7); /* Color azul semi-transparente */
+}
+/* Cambiar color de las flechas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(30%) sepia(100%) saturate(900%) hue-rotate(220deg);
+}
+/* Cambiar color de las flechas al pasar el ratón */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    filter: invert(15%) sepia(90%) saturate(500%) hue-rotate(0deg);
+}
+
+/* Cambiar color de las flechas por defecto */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(30%) sepia(100%) saturate(900%) hue-rotate(220deg); /* Azul intenso */
+    transition: filter 0.3s ease-in-out; /* Efecto de transición suave */
+}
+
+/* Cambiar color de las flechas al pasar el ratón */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    filter: invert(50%) sepia(100%) saturate(900%) hue-rotate(200deg);; /* Amarillo/Naranja vibrante */
+}
+
+/* Tarjetas (cards) */
+.card1 {
+    border-radius: 8px;
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.1),  /* Sombra sutil negra */
+        0 4px 15px rgba(224, 138, 9, 0.2), /* Sombra roja */
+        0 6px 25px rgba(64, 255, 0, 0.542), /* Sombra verde */
+        0 8px 35px rgba(0, 149, 255, 0.495); /* Sombra azul */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 170px; /* Ajusta la altura máxima según necesites */
+    overflow: hidden; /* Evita que el contenido desborde */
+}
+.card1 .card-body {
+    padding: 20px;
+    flex-grow: 1; /* Permite que el contenido se expanda para que las tarjetas sean del mismo tamaño */
+}
+
+
+.card {
+    border-radius: 8px;
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.1),  /* Sombra sutil negra */
+        0 4px 15px rgba(224, 138, 9, 0.2), /* Sombra roja */
+        0 6px 25px rgba(64, 255, 0, 0.542), /* Sombra verde */
+        0 8px 35px rgba(0, 149, 255, 0.495); /* Sombra azul */
+    margin-bottom: 20px;
+    height: 3000vh; /* Hace que todas las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido del card se apile verticalmente */
+}
+
+.card-body {
+    padding: 20px;
+    flex-grow: 1; /* Permite que el contenido se expanda para que las tarjetas sean del mismo tamaño */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0056b3; /* Color de fondo para los títulos de las tarjetas */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+}
+.card-img-top {
+    width: 100%;
+    height: 400px; /* Ajusta esta altura según lo que desees */
+    object-fit: cover; /* Hace que la imagen se ajuste dentro del contenedor sin distorsionarse */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilo de enlaces en el footer */
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    form input, form textarea {
+        font-size: 0.95rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+}

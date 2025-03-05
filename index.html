@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresa Corporativa</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
@@ -13,7 +12,7 @@
         <h1>Mi Empresa</h1>
         <nav>
             <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white active" href="index.html">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="servicios.html">Servicios</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="acerca.html">Acerca</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
@@ -21,9 +20,49 @@
         </nav>
     </header>
     
+    <!-- Sección del Carrusel -->
     <section class="container text-center my-5">
-        <h2>Bienvenidos a Nuestra Empresa</h2>
-        <p>Ofrecemos soluciones innovadoras para tu negocio.</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Primer slide -->
+                <div class="carousel-item active">
+                    <img src="./img/carrousel__1.jpg" class="d-block w-100" alt="Imagen 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Innovación en Soluciones</h5>
+                        <p>Transformamos tu negocio con las mejores ideas y tecnologías.</p>
+                    </div>
+                </div>
+                <!-- Segundo slide -->
+                <div class="carousel-item">
+                    <img src="./img/carrousel__2.jpg" class="d-block w-100" alt="Imagen 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Desarrollo Web</h5>
+                        <p>Construimos plataformas funcionales y adaptadas a tus necesidades.</p>
+                    </div>
+                </div>
+                <!-- Tercer slide -->
+                <div class="carousel-item">
+                    <img src="./img/carrousel__3.jpg" class="d-block w-100" alt="Imagen 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Marketing Digital</h5>
+                        <p>Aumenta tu presencia online con estrategias personalizadas.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
     </section>
     
     <section class="container my-5">
@@ -63,6 +102,8 @@
         <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
